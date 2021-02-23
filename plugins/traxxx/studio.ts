@@ -1,10 +1,10 @@
 import { StudioOutput } from "../../types/studio";
-import { Api, buildImageUrls, EntityResult } from "./api";
+import { Api, EntityResult, buildImageUrls } from "./api";
 import { MyStudioContext, MyValidatedStudioContext } from "./types";
 import {
+  EntityPreference,
   getEntityPreferenceFromName,
   normalizeStudioName,
-  EntityPreference,
   slugify,
   suppressProp,
   validateArgs,
@@ -54,7 +54,7 @@ export class ChannelExtractor {
         entity: EntityResult.Entity | undefined;
       }
     | undefined {
-    const bothExist = !!this.channel && !!this.network;
+    const bothExist = Boolean(this.channel) && Boolean(this.network);
 
     if (
       this.entityPreference === "channel" ||

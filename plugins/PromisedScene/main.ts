@@ -404,7 +404,7 @@ module.exports = async (ctx: MyContext): Promise<SceneOutput> => {
           return "";
         }
         const dottedTimestamp = timestampToString(searchTimestamp).replace("-", ".");
-        if (dottedTimestamp && !isNaN(+dottedTimestamp)) {
+        if (dottedTimestamp && !isNaN(Number(dottedTimestamp))) {
           return ` ${dottedTimestamp}`;
         }
         return "";

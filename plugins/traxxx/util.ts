@@ -7,7 +7,7 @@ import {
 } from "./types";
 
 export const hasProp = (target: unknown, prop: string): boolean => {
-  return !!target && typeof target === "object" && Object.hasOwnProperty.call(target, prop);
+  return Boolean(target) && typeof target === "object" && Object.hasOwnProperty.call(target, prop);
 };
 
 const DEFAULT_STUDIO_SETTINGS: StudioSettings = {

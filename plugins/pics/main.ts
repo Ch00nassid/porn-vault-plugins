@@ -1,6 +1,6 @@
 import { ActorOutput } from "../../types/actor";
 import { MovieOutput } from "../../types/movie";
-import { ScrapeDefinition, MyContext } from "./types";
+import { MyContext, ScrapeDefinition } from "./types";
 
 import { entries, executeScape, validateArgs } from "./utils";
 

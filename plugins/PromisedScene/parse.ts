@@ -1,6 +1,6 @@
 import levenshtein from "./levenshtein";
 import { MyContext } from "./types";
-import { escapeRegExp, ignoreDbLine, stripStr, dateToTimestamp } from "./util";
+import { dateToTimestamp, escapeRegExp, ignoreDbLine, stripStr } from "./util";
 
 export const parseSceneActor = (ctx: MyContext): string | null => {
   if (!ctx.args?.parseActor || !ctx.args?.source_settings?.actors) {

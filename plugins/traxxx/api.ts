@@ -1,4 +1,4 @@
-import { AxiosResponse, AxiosInstance, AxiosError } from "axios";
+import { AxiosError, AxiosInstance, AxiosResponse } from "axios";
 import { Context } from "../../types/plugin";
 
 export namespace EntityResult {
