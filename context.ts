@@ -191,6 +191,9 @@ const context: Context = {
   $yaml: yaml,
   $zod: zod,
   // Injected server functions
+  $createMarker: async () => {
+    return Date.now().toString(36);
+  },
   $createImage: async () => {
     return Date.now().toString(36);
   },

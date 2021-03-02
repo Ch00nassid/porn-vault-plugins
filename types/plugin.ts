@@ -71,6 +71,7 @@ export interface Context<Data = unknown> {
   $zod: typeof zod;
   // Injected server functions
   // $config: IConfig, too complicated to add
+  $createMarker: (name: string, seconds: number) => Promise<string>;
   $createImage: (url: string, name: string, thumbnail?: boolean) => Promise<string>;
   $createLocalImage: (path: string, name: string, thumbnail?: boolean) => Promise<string>;
   $cwd: string;
