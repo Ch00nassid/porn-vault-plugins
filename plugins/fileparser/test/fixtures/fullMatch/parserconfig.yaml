@@ -1,0 +1,6 @@
+---
+actorsMatcher:
+  regex: '(?<= - ).+?$'
+  matchesToUse:
+  - 0
+  splitter: ','

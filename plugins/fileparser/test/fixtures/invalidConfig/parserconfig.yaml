@@ -1,0 +1,33 @@
+---
+studioMatcher:
+  regexp: "(.+?)(?: ~ |$)"
+  matchesToUse:
+  - 0
+  groupsToUse:
+  - 1
+nameMatcher:
+  regex: "(.+?)(?: ~ |$)"
+  matchesToUse:
+  - 2
+  groupsToUse:
+  - 1
+actorsMatcher:
+  regex: "(.+?)(?: ~ |$)"
+  matchesToUse:
+  - 1
+  groupsToUse:
+  - 1
+  splitter: ","
+movieMatcher:
+  scopeDirname: true
+  regex: "(?![\\s\\S]*/)(.*)$"
+  matchesToUse:
+  - 0
+labelsMatcher:
+  scopeDirname: true
+  regex: "(.+?)(?:/|$)"
+  matchesToUse:
+  - 6
+  - 7
+  groupsToUse:
+  - 1

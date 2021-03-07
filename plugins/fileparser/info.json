@@ -1,0 +1,25 @@
+{
+  "name": "fileparser",
+  "version": "0.1.3",
+  "authors": [
+    "arcadianCdr"
+  ],
+  "description": "Automatically extracts scene details from your library's file and directory structure. Supported properties: release date, studio, name, actors, movie and labels.",
+  "pluginEvents": ["sceneCreated", "sceneCustom"],
+  "arguments": [
+    {
+      "name": "dry",
+      "type": "Boolean",
+      "required": false,
+      "default": false,
+      "description": "Whether to commit data changes."
+    },
+    {
+      "name": "parseDate",
+      "type": "Boolean",
+      "required": false,
+      "default": true,
+      "description": "whether to parse release dates. Defaults to true."
+    }
+  ]
+}

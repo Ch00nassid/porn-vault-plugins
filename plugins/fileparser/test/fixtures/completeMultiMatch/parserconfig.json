@@ -1,0 +1,24 @@
+{
+  "studioMatcher": {
+    "regex": "(.+?)(?: ~ |$)",
+    "matchesToUse": [1]
+  },
+  "nameMatcher": {
+    "regex": "(.+?)(?: ~ |$)",
+    "matchesToUse": [3] 
+  },
+  "actorsMatcher": {
+    "regex": "(.+?)(?: ~ |$)",
+    "matchesToUse": [2],
+    "splitter": ","
+  },
+  "movieMatcher": {
+    "scopeDirname": true,
+    "regex": "(?![\\s\\S]*\/)(.*)$"
+  },
+  "labelsMatcher": {
+    "scopeDirname": true,
+    "regex": "(.+?)(?:\/|$)",
+    "matchesToUse": [7, 8]
+  }
+}

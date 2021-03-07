@@ -1,0 +1,19 @@
+{
+  "studioMatcher": {
+    "scopeDirname": true,
+    "regex": "(?![\\s\\S]*\/)(.*)$",
+    "matchesToUse": [0]
+  },
+  "actorsMatcher": {
+    "regex": "(.+?)(?: - |$)",
+    "matchesToUse": [1],
+    "groupsToUse": [1],
+    "splitter": ","
+  },
+  "nameMatcher": {
+    "regex": "(.+?)(?: - |$)",
+    "matchesToUse": [0],
+    "groupsToUse": [1],
+    "splitter": ","
+  },
+}
